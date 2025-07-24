@@ -6,6 +6,7 @@ import {
   IconBrandYoutube,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import Avaliacao from "../shared/Avaliacao";
 
 export interface ItemProfissionalProps {
   profissional: Profissional;
@@ -21,7 +22,7 @@ export default function ItemProfissional({ profissional }: ItemProfissionalProps
           src={profissional.imagemURL}
           alt={profissional.nome}
           fill
-          className="object-cover rounded-full border-4 border-zinc-700"
+          className="object-cover object-top rounded-full border-4 border-zinc-700"
         />
       </div>
 
@@ -34,13 +35,16 @@ export default function ItemProfissional({ profissional }: ItemProfissionalProps
       <span className="text-sm text-zinc-300 text-center mt-2">
         {profissional.descricao}
       </span>
-
+      {/* Avaliação */}
+      <div className="mt-2">
+        <Avaliacao nota={profissional.nota} quantidade={profissional.quantidadeAvaliacoes} />
+      </div>
       {/* Redes sociais */}
-      <div className="flex gap-4 mt-4 text-green-500">
-        <IconBrandYoutube stroke={1} className="hover:text-green-400 cursor-pointer" />
-        <IconBrandInstagram stroke={1} className="hover:text-green-400 cursor-pointer" />
-        <IconBrandLinkedin stroke={1} className="hover:text-green-400 cursor-pointer" />
-        <IconBrandX stroke={1} className="hover:text-green-400 cursor-pointer" />
+      <div className="flex gap-4 mt-4 text-orange-500">
+        <IconBrandYoutube stroke={1} className="hover:text-orange-400 cursor-pointer" />
+        <IconBrandInstagram stroke={1} className="hover:text-orange-400 cursor-pointer" />
+        <IconBrandLinkedin stroke={1} className="hover:text-orange-400 cursor-pointer" />
+        <IconBrandX stroke={1} className="hover:text-orange-400 cursor-pointer" />
       </div>
     </div>
   );

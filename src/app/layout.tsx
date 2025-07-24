@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="dark">
       <body
         className={`${inter.className} bg-[#1c1c1c] text-white min-h-screen antialiased`}
-        style={{ backgroundColor: '#1c1c1c' }} // Força no inline também
+        style={{ backgroundColor: '#1c1c1c' }}
       >
         {children}
       </body>
