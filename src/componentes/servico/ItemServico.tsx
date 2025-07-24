@@ -9,7 +9,7 @@ export default function ItemServico(props: ItemServicoProps) {
   const { servico } = props;
 
   return (
-    <div className="flex rounded-xl bg-zinc-600 overflow-hidden">
+    <div className="flex rounded-xl bg-zinc-800 overflow-hidden">
       <Image
         src={servico.imagemURL}
         alt={servico.nome}
