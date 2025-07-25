@@ -14,8 +14,9 @@ export interface ItemProfissionalProps {
 
 export default function ItemProfissional({ profissional }: ItemProfissionalProps) {
   return (
-    <div className="flex flex-col items-center rounded-xl bg-zinc-800 border border-zinc-700 shadow-md p-6">
-
+    <div className="flex flex-col items-center rounded-xl p-6 border border-zinc-700 shadow-md 
+                    backdrop-blur-md bg-zinc-800/60 transition-transform duration-300 hover:scale-105">
+      
       {/* Imagem redonda */}
       <div className="relative w-52 h-52 mb-4">
         <Image
@@ -35,16 +36,24 @@ export default function ItemProfissional({ profissional }: ItemProfissionalProps
       <span className="text-sm text-zinc-300 text-center mt-2">
         {profissional.descricao}
       </span>
+
       {/* Avaliação */}
       <div className="mt-2">
-        <Avaliacao nota={profissional.nota} quantidade={profissional.quantidadeAvaliacoes} />
+        <Avaliacao
+          nota={profissional.nota}
+          quantidade={profissional.quantidadeAvaliacoes}
+        />
       </div>
-      {/* Redes sociais */}
+
+      {/* Redes sociais com efeito de aumento */}
       <div className="flex gap-4 mt-4 text-orange-500">
-        <IconBrandYoutube stroke={1} className="hover:text-orange-400 cursor-pointer" />
-        <IconBrandInstagram stroke={1} className="hover:text-orange-400 cursor-pointer" />
-        <IconBrandLinkedin stroke={1} className="hover:text-orange-400 cursor-pointer" />
-        <IconBrandX stroke={1} className="hover:text-orange-400 cursor-pointer" />
+        {[IconBrandYoutube, IconBrandInstagram, IconBrandLinkedin, IconBrandX].map((Icon, index) => (
+          <Icon
+            key={index}
+            stroke={1}
+            className="cursor-pointer transition-transform duration-300 transform hover:scale-125 hover:text-orange-400"
+          />
+        ))}
       </div>
     </div>
   );

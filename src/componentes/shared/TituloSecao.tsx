@@ -4,6 +4,12 @@ export interface TituloSecaoProps {
   secundario: string;
 }
 
+export interface TituloSecaoProps {
+  tag?: string;
+  principal: string;
+  secundario: string;
+}
+
 export default function TituloSecao(props: TituloSecaoProps) {
   const { tag, principal, secundario } = props;
 
@@ -14,7 +20,7 @@ export default function TituloSecao(props: TituloSecaoProps) {
           {tag.split('').map((letra, index) => (
             <span
               key={index}
-              className={`text-zinc-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+              className={`text-zinc-300 group-hover:text-white transition-colors duration-300`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {letra}
@@ -22,8 +28,8 @@ export default function TituloSecao(props: TituloSecaoProps) {
           ))}
         </div>
       )}
-      <h2 className="text-white font-black text-6xl sm:text-5xl text-gradient">{principal}</h2>
-      <h3 className="text-zinc-400">{secundario}</h3> {`se precisar voltar aqui`}
+      <h2 className="text-white font-black text-6xl sm:text-5xl">{principal}</h2>
+      <h3 className="text-zinc-300">{secundario}</h3>
     </div>
   );
 }
