@@ -8,7 +8,7 @@ const profissionais: Profissional[] = [
     imagemURL: "/profissionais/barbeiro-1.png",
     avaliacao: 5,
     quantidadeAvaliacoes: 87,
-    nota: 0
+    nota: 4.5
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const profissionais: Profissional[] = [
     imagemURL: "/profissionais/barbeiro-3.png",
     avaliacao: 4.5,
     quantidadeAvaliacoes: 39,
-    nota: 0
+    nota: 5.0
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const profissionais: Profissional[] = [
     imagemURL: "/profissionais/barbeiro-2.png",
     avaliacao: 5,
     quantidadeAvaliacoes: 91,
-    nota: 0
+    nota: 4.5
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const profissionais: Profissional[] = [
     imagemURL: "/profissionais/barbeiro-4.png",
     avaliacao: 4.5,
     quantidadeAvaliacoes: 29,
-    nota: 0
+    nota: 4.0
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const profissionais: Profissional[] = [
     imagemURL: "/profissionais/barbeiro-5.png",
     avaliacao: 4.5,
     quantidadeAvaliacoes: 44,
-    nota: 0
+    nota: 4.0
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const profissionais: Profissional[] = [
     imagemURL: "/profissionais/barbeiro-6.png",
     avaliacao: 5,
     quantidadeAvaliacoes: 46,
-    nota: 0
+    nota: 3.0
   },
 ];
 
