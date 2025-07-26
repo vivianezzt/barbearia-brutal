@@ -1,5 +1,6 @@
 import NossosProfissionais from "@/componentes/profissional/NossosProfissionais";
 import NossosServisos from "@/componentes/servico/NossosServicos";
+import Rodape from "@/componentes/shared/Rodape";
 import SecaoBackground from "@/componentes/shared/SecaoBackground";
 
 export default function Lading() {
@@ -15,6 +16,7 @@ export default function Lading() {
       <SecaoBackground imagem="/banners/fundo-profissionais.png">
         <NossosProfissionais />
       </SecaoBackground>
+      <Rodape />
     </div>
   );
 }
