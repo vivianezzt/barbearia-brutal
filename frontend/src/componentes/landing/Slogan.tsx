@@ -29,7 +29,7 @@ export default function Slogan() {
             <p className="text-base sm:text-lg font-extralight text-white">
               🤟 Seu estilo, nosso Rock 🤟
             </p>
-            <Link href="/agendamento" className="mt-4 inline-block bg-zinc-900 text-orange-300 font-bold py-2 px-4 rounded hover:bg-orange-300 text-zinc-800 transition-colors">Agendar agora</Link>
+            <Link href="/agendamento" className="mt-4 inline-block bg-zinc-900 text-orange-300 font-bold py-2 px-4 rounded transition-colors hover:bg-orange-300 hover:text-white">Agendar agora</Link>
           </div>
         </div>
       </div>
