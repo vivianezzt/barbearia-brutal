@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Cabecalho() {
      return (
-        <header className="flex items-center bg-black/60 text-zinc-300 h-24">
+        <header className="flex items-center bg-black/60 text-zinc-300 h-24 self-stretch">
             <nav className="flex items-center justify-between container">
                 <Logo />
                 <div>

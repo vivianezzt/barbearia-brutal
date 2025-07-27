@@ -20,7 +20,7 @@ export default function TituloSecao(props: TituloSecaoProps) {
           {tag.split('').map((letra, index) => (
             <span
               key={index}
-              className={`text-zinc-300 group-hover:text-white transition-colors duration-300`}
+              className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-zinc-200 group-hover:text-white transition-colors duration-300`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {letra}
@@ -28,7 +28,7 @@ export default function TituloSecao(props: TituloSecaoProps) {
           ))}
         </div>
       )}
-      <h2 className="text-white font-black text-6xl sm:text-5xl">{principal}</h2>
+      <h2 className="text-orange-300 font-black  text-5xl sm:text-6xl md:text-7xl sm:text-5xl">{principal}</h2>
       <h3 className="text-zinc-300">{secundario}</h3>
     </div>
   );

@@ -1,4 +1,4 @@
-import profissionais from "@/core/servico/profissionias";
+import profissionais from "@/data/constants/profissionias";
 import ItemProfissional from "./ItemProfissional";
 import TituloSecao from "../shared/TituloSecao";
 

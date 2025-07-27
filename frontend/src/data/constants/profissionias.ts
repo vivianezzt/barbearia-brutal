@@ -1,4 +1,4 @@
-import Profissional from "../profissional/Profissional";
+import Profissional from "../../core/profissional/Profissional";
 
 const profissionais: Profissional[] = [
   {

@@ -15,13 +15,13 @@ export default function Rodape() {
       <div className="flex justify-between items-center flex-col md:flex-row gap-4">
       <Logo />
       <div className="flex flex-col gap-1 text-center md:text-left gap-2">
-        <span className="font-bold text-2xl text-orange-400">Sobre</span>
+        <span className="font-bold text-2xl text-orange-300">Sobre</span>
         <span className="text-sm">Nossa Hitória</span>
         <span className="text-sm">Política de privacidade</span>
         <span className="text-sm">Termo de uso</span>
       </div>
          <div className="flex flex-col gap-1 text-center md:text-left gap-2">
-        <span className="font-bold text-2xl text-orange-400">Contato</span>
+        <span className="font-bold text-2xl text-orange-300">Contato</span>
         <span className="text-sm">suporte@barbabrutal.app</span>
         <div className="text-sm flex items-center gap-1 cursor-pointer hover:text-green-400 mt-1 md:mt-0 hover:scale-105 transition-transform justify-center md:justify-start">
           <IconBrandWhatsapp size={20} stroke={1} className="text-green-500" />
