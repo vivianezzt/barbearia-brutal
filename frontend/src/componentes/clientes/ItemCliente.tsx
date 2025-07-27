@@ -1,12 +1,16 @@
 export interface ItemClienteProps {
-  cliente: any;
+  nome: string
+  testemunho: string;
+
 }
 
 export default function ItemCliente(props : ItemClienteProps) {
-    const { cliente } = props;
+    const { nome, testemunho } = props;
   return (
     <div>
-        {cliente.nome}
+        <p className="text-white font-bold text-4xl">{nome}</p>
+        <p className="my-4 text-zinc-400">{testemunho}</p>
+        <p>{}</p>
     </div>
   );
 }
