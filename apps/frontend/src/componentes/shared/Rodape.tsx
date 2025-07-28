@@ -70,10 +70,10 @@ export default function Rodape() {
         <div className="flex flex-col items-center md:items-end text-sm">
           <div className="flex items-center gap-1.5">
             <span>Feito com</span>
-            <span>🪓</span>
+            <span>🪓 por Viviane Aguiar</span>
             <span>em {new Date().getFullYear()}</span>
           </div>
-          <span>Todos os direitos reservados &copy;</span>
+          <span>&copy; Todos os direitos reservados &copy;</span>
         </div>
       </div>
     </footer>
