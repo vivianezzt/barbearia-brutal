@@ -1,0 +1,16 @@
+GET http://localhost:3000/ping
+
+### Post login 
+POST http://localhost:3000/auth/login
+
+### Requisicao registrar usuario
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "email": "joaodasilva@zmail.com",
+  "senha": "123456",
+  "telefone": "11999999999",
+  "barbeiro": false
+}
