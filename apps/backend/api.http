@@ -8,9 +8,9 @@ POST http://localhost:3000/auth/registrar
 Content-Type: application/json
 
 {
-  "nome": "João da Silva Pereira",
-  "email": "joaodasilvpereira@zmail.com",
+  "nome": "Maria Souza",
+  "email": "mariasouza@zmail.com",
   "senha": "123456",
-  "telefone": "11999999988",
+  "telefone": "11999997788",
   "barbeiro": false
 }

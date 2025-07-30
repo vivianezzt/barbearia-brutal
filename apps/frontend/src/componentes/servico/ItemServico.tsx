@@ -1,4 +1,4 @@
-import Servico from "@/core/servico/Servico";
+import {Servico} from "@barbearia-brutal/core";
 import Image from "next/image";
 
 export interface ItemServicoProps {
