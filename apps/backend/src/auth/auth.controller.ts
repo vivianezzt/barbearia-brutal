@@ -8,13 +8,15 @@ export class AuthController {
 
   @Post('registrar')
   async register(@Body() usuario: Usuario) {
-    const casoDeUso = new RegistrarUsuario()
-    await casoDeUso.executar(usuario)
+    
 
     const usuarioExistente = await this.repo.buscarPorEmail(usuario.email);
     if (usuarioExistente) { 
       throw new HttpException('Usuário já existe com este email', 400);
     }
     const novoUsuario = await this.repo.salvar({...usuario, barbeiro: false});
+
+    const casoDeUso = new RegistrarUsuario()
+    return await casoDeUso.executar(usuario)
   }
 }
