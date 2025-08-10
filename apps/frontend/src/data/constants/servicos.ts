@@ -1,5 +1,5 @@
 // Ajuste o caminho abaixo conforme a localização correta do arquivo Servico.ts
-import {Servico} from "@barbearia-brutal/core";
+import Servico from "../../core/servico/Servico";
 
 const servicos: Servico[] = [
   {
